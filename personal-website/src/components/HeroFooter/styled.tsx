@@ -9,7 +9,7 @@ export const HeroFooterText1 = styled.p`
   font-family: inter-thin;
   position: relative;
   /* margin: 100px auto; */
-  margin: 60px;
+  margin: 100px 0 100px 60px;
 `;
 
 export const HeroFooterContainer = styled.ul`

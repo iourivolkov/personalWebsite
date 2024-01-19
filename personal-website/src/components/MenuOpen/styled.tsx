@@ -9,6 +9,8 @@ export const MenuContainer = styled.div`
   flex-direction: column;
   align-items: center;
   position: absolute;
+  z-index: 900;
+  overflow: hidden;
 `;
 
 export const MenuNavigation = styled.p`

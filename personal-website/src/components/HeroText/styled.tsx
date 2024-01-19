@@ -6,7 +6,8 @@ export const HeroParagraph = styled.p`
   text-transform: uppercase;
   max-width: 20ch;
   /* margin: 200px auto 0 auto; */
-  margin: 100px auto;
+  /* margin: 100px auto; */
+  margin: 50px;
   text-align: left;
 `;
 
@@ -19,5 +20,7 @@ export const HeroText1 = styled.span`
 export const InteractiveSpan = styled.span`
   &:hover {
     color: red;
+    cursor: pointer;
+    text-decoration: underline;
   }
 `;

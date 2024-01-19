@@ -11,6 +11,7 @@ export const StyledBreak = styled.hr`
   background-color: #f5f5f5;
   opacity: 0.3;
   margin: auto;
+  z-index: 1;
 `;
 
 const Home: NextPage = () => {

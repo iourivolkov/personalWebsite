@@ -4,15 +4,17 @@ import {
   FooterText,
   FooterTextContainer,
   FooterContainer,
+  FooterButton,
 } from "./styled";
 
 const Footer = () => {
   return (
     <FooterContainer>
       <FooterLogo>iourivolkov</FooterLogo>
-      <FooterTextContainer>
+      <FooterButton>Top</FooterButton>
+      {/* <FooterTextContainer>
         <FooterText>Back to top</FooterText>
-      </FooterTextContainer>
+      </FooterTextContainer> */}
     </FooterContainer>
   );
 };

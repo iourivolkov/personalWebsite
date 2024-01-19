@@ -6,7 +6,7 @@ export const CardContainer = styled.div`
   /* justify-content: start; */
   align-items: start;
   border-radius: 20px;
-  border: 0.25px solid lightgrey;
+  border: 0.1px solid lightgrey;
   margin: 40px;
   cursor: pointer;
 `;

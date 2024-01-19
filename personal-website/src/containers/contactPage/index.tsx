@@ -8,7 +8,7 @@ import {
   ContactLinksText,
 } from "./styled";
 
-const ContactPage = () => {
+const ContactPage: FunctionComponent = () => {
   return (
     <ContactPageContainer>
       <ContactHeading>Let's get in touch.</ContactHeading>
@@ -25,7 +25,7 @@ const ContactPage = () => {
 
         <ContactLinkSubContainer>
           <ContactLinks>Instagram</ContactLinks>
-          <ContactLinksText>@iveeeeeth</ContactLinksText>
+          <ContactLinksText>@ayureeeeee</ContactLinksText>
         </ContactLinkSubContainer>
 
         <ContactLinkSubContainer>

@@ -12,6 +12,6 @@ export const NavigationItem = styled.li<{ menuOpen?: boolean }>`
   margin: 40px 100px 40px 60px;
   cursor: pointer;
   font-size: 16px;
-  z-index: 10000;
+  z-index: 10000000;
   color: ${(props) => (props.menuOpen ? "#fff" : "#000000")};
 `;

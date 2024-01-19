@@ -1,4 +1,4 @@
-import { HeroFooterContainer, HeroFooterSpan, HeroFooterText1 } from "./styled";
+import { HeroFooterContainer, HeroFooterText1 } from "./styled";
 
 const HeroFooter = () => {
   return (

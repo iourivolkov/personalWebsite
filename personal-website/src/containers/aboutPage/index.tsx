@@ -25,7 +25,7 @@ const AboutPage: FunctionComponent = () => {
           src="/assets/testImage.jpeg"
           alt="test img"
           height={650}
-          width={550}
+          width={850}
           style={{ borderRadius: "20px" }}
         />
       </AboutImageContainer>

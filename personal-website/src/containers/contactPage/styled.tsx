@@ -27,9 +27,11 @@ export const ContactLinkSubContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10rem;
 `;
 
 export const ContactLinksText = styled.p`
   font-size: 30px;
   font-family: inter-thin;
+  cursor: pointer;
 `;
