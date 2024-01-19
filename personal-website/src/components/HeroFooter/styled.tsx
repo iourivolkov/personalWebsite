@@ -8,19 +8,10 @@ export const HeroFooterText1 = styled.p`
   font-weight: lighter;
   font-family: inter-thin;
   position: relative;
-  margin: auto;
-`;
-
-export const HeroFooterSpan = styled.span`
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: inter-black;
+  /* margin: 100px auto; */
+  margin: 60px;
 `;
 
 export const HeroFooterContainer = styled.ul`
-  display: flex;
-  justify-content: space-between;
-  padding: 40px;
-  margin-top: 10%;
+  /* margin: 200px 0 100px 40px; */
 `;

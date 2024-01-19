@@ -5,7 +5,8 @@ export const HeroParagraph = styled.p`
   font-size: 96px;
   text-transform: uppercase;
   max-width: 20ch;
-  margin: 200px auto 0 auto;
+  /* margin: 200px auto 0 auto; */
+  margin: 100px auto;
   text-align: left;
 `;
 
@@ -17,8 +18,6 @@ export const HeroText1 = styled.span`
 /* @TODO - flesh out logic for this span*/
 export const InteractiveSpan = styled.span`
   &:hover {
-    font-size: 100px;
-    font-family: inter-black;
-    padding-left: 5px;
+    color: red;
   }
 `;
