@@ -25,4 +25,7 @@ export const AboutText = styled.p`
   max-width: 25ch;
 `;
 
-export const AboutImageContainer = styled.div``;
+export const AboutImageContainer = styled.div`
+  max-height: 650px;
+  max-width: 850px;
+`;

@@ -1,10 +1,14 @@
 import { styled } from "styled-components";
 
-export const Navigation = styled.ul`
+export const Navigation = styled.ul<{ isScrolling?: boolean }>`
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  position: sticky;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease-in-out;
 `;
 
 export const NavigationItem = styled.li<{ menuOpen?: boolean }>`

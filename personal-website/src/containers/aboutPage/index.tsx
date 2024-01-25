@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-import Image from "next/image";
 import {
   AboutPageContainer,
   AboutHeading,
@@ -14,19 +13,21 @@ const AboutPage: FunctionComponent = () => {
       <AboutTextContainer>
         <AboutHeading id="about">Toronto based.</AboutHeading>
         <AboutText>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
-          minima corrupti maxime distinctio soluta cupiditate error excepturi
-          itaque, cum rem hic deleniti, a repellat vitae veniam repudiandae
-          velit! Eum, a.
+          Having worked in regulatory affairs, web 3.0 marketing, and software
+          development, I am adept at satisfying technical requirements while
+          navigating interpersonal relationships through client-facing roles.
         </AboutText>
       </AboutTextContainer>
       <AboutImageContainer>
-        <Image
-          src="/assets/testImage.jpeg"
-          alt="test img"
-          height={650}
-          width={850}
-          style={{ borderRadius: "20px" }}
+        <img
+          src="/assets/toronto.png"
+          height="100%"
+          width="100%"
+          style={{
+            objectPosition: "top",
+            objectFit: "cover",
+            borderRadius: "20px",
+          }}
         />
       </AboutImageContainer>
     </AboutPageContainer>
