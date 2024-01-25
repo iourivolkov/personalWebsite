@@ -32,10 +32,16 @@ const NavBar = () => {
     setIsMenuOpen(false);
   };
 
+  function scrollToTop() {
+    window.scroll({ top: 0, behavior: "smooth" });
+  }
+
   return (
     <>
       <Navigation isScrolling={isScrolling}>
-        <NavigationItem menuOpen={isMenuOpen}>IOURIVOLKOV</NavigationItem>
+        <NavigationItem onClick={scrollToTop} menuOpen={isMenuOpen}>
+          IOURIVOLKOV
+        </NavigationItem>
         {isMenuOpen && <MenuOpen closeMenu={closeOpenMenu} />}
         <NavigationItem menuOpen={isMenuOpen} onClick={handleMenuOpen}>
           {isMenuOpen ? "Close" : "Menu"}
