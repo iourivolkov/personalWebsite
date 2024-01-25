@@ -1,19 +1,18 @@
 import { styled } from "styled-components";
+import "../../styles/fonts.css";
 
 export const HeroParagraph = styled.p`
   font-family: inter-regular;
-  font-size: 96px;
+  font-size: 120px;
   text-transform: uppercase;
   max-width: 20ch;
-  /* margin: 200px auto 0 auto; */
-  /* margin: 100px auto; */
-  margin: 50px;
+  margin: 100px auto 150px auto;
   text-align: left;
 `;
 
 export const HeroText1 = styled.span`
   font-family: inter-black;
-  font-size: 96px;
+  font-size: 120px;
 `;
 
 /* @TODO - flesh out logic for this span*/

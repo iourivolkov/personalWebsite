@@ -8,7 +8,7 @@ export const ContactLinksContainer = styled.div`
 export const ContactPageContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 100px 40px 100px 40px;
+  margin: 150px 40px 100px 40px;
 `;
 
 export const ContactHeading = styled.h1`

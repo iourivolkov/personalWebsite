@@ -11,20 +11,20 @@ export const StyledBreak = styled.hr`
   background-color: #f5f5f5;
   opacity: 0.3;
   margin: auto;
-  z-index: 1;
+  z-index: 10;
 `;
 
 const Home: NextPage = () => {
   return (
     <>
       <LandingPage />
-      <StyledBreak />
+      {/* <StyledBreak /> */}
       <ProjectPage />
-      <StyledBreak />
+      {/* <StyledBreak /> */}
       <AboutPage />
-      <StyledBreak />
+      {/* <StyledBreak /> */}
       <ContactPage />
-      <StyledBreak />
+      {/* <StyledBreak /> */}
       <Footer />
     </>
   );

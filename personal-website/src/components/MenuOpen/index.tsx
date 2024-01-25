@@ -1,14 +1,58 @@
-import { MenuContainer, MenuNavigation } from "./styled";
+import {
+  MenuContainer,
+  MenuNavigation,
+  MenuSocialsContainer,
+  MenuSocialLink,
+} from "./styled";
+import Link from "next/link";
 
-// @TODO - add smooth scrollTo navigation to menuNav items
-
-const MenuOpen = () => {
+const MenuOpen = ({ closeMenu }: any) => {
   return (
     <MenuContainer>
-      <MenuNavigation>home</MenuNavigation>
-      <MenuNavigation>projects</MenuNavigation>
-      <MenuNavigation>about</MenuNavigation>
-      <MenuNavigation>contact</MenuNavigation>
+      <Link style={{ textDecoration: "none" }} href="#home">
+        <MenuNavigation>home</MenuNavigation>
+      </Link>
+      <Link
+        style={{ textDecoration: "none" }}
+        href="#projects"
+        onClick={closeMenu}
+      >
+        <MenuNavigation>projects</MenuNavigation>
+      </Link>
+      <Link
+        style={{ textDecoration: "none" }}
+        href="#about"
+        onClick={closeMenu}
+      >
+        <MenuNavigation>about</MenuNavigation>
+      </Link>
+      <Link
+        style={{ textDecoration: "none" }}
+        href="#contact"
+        onClick={closeMenu}
+      >
+        <MenuNavigation>contact</MenuNavigation>
+      </Link>
+      <MenuSocialsContainer>
+        <Link
+          style={{ textDecoration: "none" }}
+          href="https://www.linkedin.com/in/iourivolkov/"
+        >
+          <MenuSocialLink>LinkedIn</MenuSocialLink>
+        </Link>
+        <Link
+          style={{ textDecoration: "none" }}
+          href="https://resume.creddle.io/resume/h3w9zyogj17"
+        >
+          <MenuSocialLink>Resume</MenuSocialLink>
+        </Link>
+        <Link
+          style={{ textDecoration: "none" }}
+          href="https://www.instagram.com/ayureeeeee/"
+        >
+          <MenuSocialLink>Instagram</MenuSocialLink>
+        </Link>
+      </MenuSocialsContainer>
     </MenuContainer>
   );
 };

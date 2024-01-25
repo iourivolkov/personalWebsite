@@ -12,7 +12,7 @@ const AboutPage: FunctionComponent = () => {
   return (
     <AboutPageContainer>
       <AboutTextContainer>
-        <AboutHeading>Toronto based.</AboutHeading>
+        <AboutHeading id="about">Toronto based.</AboutHeading>
         <AboutText>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
           minima corrupti maxime distinctio soluta cupiditate error excepturi

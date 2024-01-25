@@ -11,7 +11,7 @@ import {
 const ContactPage: FunctionComponent = () => {
   return (
     <ContactPageContainer>
-      <ContactHeading>Let's get in touch.</ContactHeading>
+      <ContactHeading id="contact">Let's get in touch.</ContactHeading>
       <ContactLinksContainer>
         <ContactLinkSubContainer>
           <ContactLinks>Telegram</ContactLinks>

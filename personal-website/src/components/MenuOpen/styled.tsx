@@ -20,6 +20,30 @@ export const MenuNavigation = styled.p`
   font-size: 96px;
   cursor: pointer;
   line-height: 85%;
+  text-decoration: none;
+
+  &:hover {
+    color: #fff;
+  }
+`;
+
+export const MenuSocialsContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 100px 40px;
+  align-items: start;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+`;
+
+export const MenuSocialLink = styled.p`
+  font-family: inter-regular;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #efefef52;
+  cursor: pointer;
 
   &:hover {
     color: #fff;

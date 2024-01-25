@@ -8,13 +8,14 @@ import {
 } from "./styled";
 
 const Footer = () => {
+  function scrollToTop() {
+    window.scroll({ top: 0, behavior: "smooth" });
+  }
+
   return (
     <FooterContainer>
       <FooterLogo>iourivolkov</FooterLogo>
-      <FooterButton>Top</FooterButton>
-      {/* <FooterTextContainer>
-        <FooterText>Back to top</FooterText>
-      </FooterTextContainer> */}
+      <FooterButton onClick={scrollToTop}>Top</FooterButton>
     </FooterContainer>
   );
 };

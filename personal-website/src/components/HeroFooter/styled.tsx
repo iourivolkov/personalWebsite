@@ -8,8 +8,6 @@ export const HeroFooterText1 = styled.p`
   font-weight: lighter;
   font-family: inter-thin;
   position: relative;
-  /* margin: 100px auto; */
-  margin: 100px 0 100px 60px;
 `;
 
 export const HeroFooterContainer = styled.ul`

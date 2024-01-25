@@ -9,11 +9,15 @@ const NavBar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeOpenMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
       <Navigation>
         <NavigationItem menuOpen={isMenuOpen}>IOURIVOLKOV</NavigationItem>
-        {isMenuOpen && <MenuOpen />}
+        {isMenuOpen && <MenuOpen closeMenu={closeOpenMenu} />}
         <NavigationItem menuOpen={isMenuOpen} onClick={handleMenuOpen}>
           {isMenuOpen ? "Close" : "Menu"}
         </NavigationItem>
