@@ -5,8 +5,8 @@ const HeroText = () => {
   return (
     <HeroParagraph>
       <HeroText1>frontend developer </HeroText1>
-      devoted to crafting immersive experiences that{" "}
-      <InteractiveSpan>wow</InteractiveSpan>
+      {/* devoted to crafting immersive experiences that{" "}
+      <InteractiveSpan>wow</InteractiveSpan> */}
     </HeroParagraph>
   );
 };

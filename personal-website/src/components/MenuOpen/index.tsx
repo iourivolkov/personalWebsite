@@ -6,12 +6,21 @@ import {
 } from "./styled";
 import Link from "next/link";
 
-const MenuOpen = ({ closeMenu }: any) => {
+const MenuOpen = ({ closeMenu, isMenuOpen }: any) => {
+  function scrollToTop() {
+    window.scroll({ top: 0, behavior: "smooth" });
+    closeMenu();
+  }
+
   return (
-    <MenuContainer>
-      <Link style={{ textDecoration: "none" }} href="#home">
-        <MenuNavigation>home</MenuNavigation>
-      </Link>
+    <MenuContainer
+      style={{
+        transform: `translateX(${isMenuOpen ? "0%" : "-100%"})`,
+        transition: "transform 0.5s ease",
+      }}
+    >
+      <MenuNavigation onClick={scrollToTop}>home</MenuNavigation>
+
       <Link
         style={{ textDecoration: "none" }}
         href="#projects"

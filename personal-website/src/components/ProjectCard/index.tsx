@@ -5,6 +5,8 @@ import {
   CardText,
   CardTextContainer,
 } from "./styled";
+import ProjectCardModal from "../ProjectCardModal";
+import { useState } from "react";
 
 import Image from "next/image";
 

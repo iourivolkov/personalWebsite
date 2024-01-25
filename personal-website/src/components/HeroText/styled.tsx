@@ -3,11 +3,12 @@ import "../../styles/fonts.css";
 
 export const HeroParagraph = styled.p`
   font-family: inter-regular;
-  font-size: 120px;
+  font-size: 220px;
   text-transform: uppercase;
   max-width: 20ch;
-  margin: 100px auto 150px auto;
-  text-align: left;
+  /* margin: 100px auto 150px auto; */
+  margin: 200px auto;
+  text-align: center;
 `;
 
 export const HeroText1 = styled.span`

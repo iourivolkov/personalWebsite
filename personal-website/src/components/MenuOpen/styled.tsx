@@ -24,6 +24,8 @@ export const MenuNavigation = styled.p`
 
   &:hover {
     color: #fff;
+    transform: skew(-0.04turn);
+    transition: all 0.2s ease-in-out;
   }
 `;
 
@@ -31,7 +33,7 @@ export const MenuSocialsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  margin: 100px 40px;
+  margin: 50px 40px;
   align-items: start;
   position: absolute;
   left: 0;
