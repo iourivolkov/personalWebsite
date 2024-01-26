@@ -73,9 +73,10 @@ export const ContactLinksText = styled.button`
   }
 `;
 
-export const ContactLinkBreak = styled.hr`
+export const ContactLinkBreak = styled.hr<{ isMenuOpen: boolean }>`
   width: 100%;
   background-color: black;
   opacity: 0.5;
   z-index: 1;
+  display: ${(props) => props.isMenuOpen && "none"};
 `;

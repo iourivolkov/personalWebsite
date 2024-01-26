@@ -1,9 +1,10 @@
 import { Navigation, NavigationItem } from "./styled";
 import { useState, useEffect } from "react";
 import MenuOpen from "../MenuOpen";
+import { usePersonalWebsiteStore } from "@/store/personalWebsiteStore";
 
 const NavBar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isMenuOpen, setIsMenuOpen } = usePersonalWebsiteStore();
   const [isScrolling, setIsScrolling] = useState(false);
 
   useEffect(() => {

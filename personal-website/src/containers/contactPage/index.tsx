@@ -9,11 +9,14 @@ import {
   ContactLinkBreak,
 } from "./styled";
 import Link from "next/link";
+import { usePersonalWebsiteStore } from "@/store/personalWebsiteStore";
 
 const ContactPage: FunctionComponent = () => {
+  const { isMenuOpen, setIsMenuOpen } = usePersonalWebsiteStore();
+
   return (
     <ContactPageContainer>
-      <ContactHeading id="contact">Let's get in touch.</ContactHeading>
+      <ContactHeading id="contact">Contact</ContactHeading>
       <ContactLinksContainer>
         <ContactLinkSubContainer>
           <ContactLinks>LinkedIn</ContactLinks>
@@ -24,7 +27,7 @@ const ContactPage: FunctionComponent = () => {
             <ContactLinksText>connect</ContactLinksText>
           </Link>
         </ContactLinkSubContainer>
-        <ContactLinkBreak />
+        <ContactLinkBreak isMenuOpen={isMenuOpen} />
         <ContactLinkSubContainer>
           <ContactLinks>Instagram</ContactLinks>
           <Link
@@ -34,7 +37,7 @@ const ContactPage: FunctionComponent = () => {
             <ContactLinksText>connect</ContactLinksText>
           </Link>
         </ContactLinkSubContainer>
-        <ContactLinkBreak />
+        <ContactLinkBreak isMenuOpen={isMenuOpen} />
         <ContactLinkSubContainer>
           <ContactLinks>Email</ContactLinks>
           <Link style={{ textDecoration: "none" }} href="">

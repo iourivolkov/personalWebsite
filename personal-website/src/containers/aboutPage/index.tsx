@@ -11,11 +11,10 @@ const AboutPage: FunctionComponent = () => {
   return (
     <AboutPageContainer>
       <AboutTextContainer>
-        <AboutHeading id="about">Toronto based.</AboutHeading>
+        <AboutHeading id="about">About</AboutHeading>
         <AboutText>
-          Having worked in regulatory affairs, web 3.0 marketing, and software
-          development, I am adept at satisfying technical requirements while
-          navigating interpersonal relationships through client-facing roles.
+          Toronto-based creative who enjoys creating immersive web experiences,
+          building the future of finance via web3 and capturing timeless images.
         </AboutText>
       </AboutTextContainer>
       <AboutImageContainer>
