@@ -7,7 +7,7 @@ export const Navigation = styled.ul<{ isScrolling?: boolean }>`
   position: fixed;
   top: 0px;
   width: 100%;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
 `;
 
 export const NavigationItem = styled.li<{ menuOpen?: boolean }>`

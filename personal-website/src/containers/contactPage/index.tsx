@@ -6,7 +6,9 @@ import {
   ContactLinksContainer,
   ContactLinkSubContainer,
   ContactLinksText,
+  ContactLinkBreak,
 } from "./styled";
+import Link from "next/link";
 
 const ContactPage: FunctionComponent = () => {
   return (
@@ -14,23 +16,30 @@ const ContactPage: FunctionComponent = () => {
       <ContactHeading id="contact">Let's get in touch.</ContactHeading>
       <ContactLinksContainer>
         <ContactLinkSubContainer>
-          <ContactLinks>Telegram</ContactLinks>
-          <ContactLinksText>@someguyyyy</ContactLinksText>
-        </ContactLinkSubContainer>
-
-        <ContactLinkSubContainer>
           <ContactLinks>LinkedIn</ContactLinks>
-          <ContactLinksText>/in/iourivolkov/</ContactLinksText>
+          <Link
+            style={{ textDecoration: "none" }}
+            href="https://www.linkedin.com/in/iourivolkov/"
+          >
+            <ContactLinksText>connect</ContactLinksText>
+          </Link>
         </ContactLinkSubContainer>
-
+        <ContactLinkBreak />
         <ContactLinkSubContainer>
           <ContactLinks>Instagram</ContactLinks>
-          <ContactLinksText>@ayureeeeee</ContactLinksText>
+          <Link
+            style={{ textDecoration: "none" }}
+            href="https://www.instagram.com/ayureeeeee/"
+          >
+            <ContactLinksText>connect</ContactLinksText>
+          </Link>
         </ContactLinkSubContainer>
-
+        <ContactLinkBreak />
         <ContactLinkSubContainer>
           <ContactLinks>Email</ContactLinks>
-          <ContactLinksText>volk.iouri@gmail.com</ContactLinksText>
+          <Link style={{ textDecoration: "none" }} href="">
+            <ContactLinksText>connect</ContactLinksText>
+          </Link>
         </ContactLinkSubContainer>
       </ContactLinksContainer>
     </ContactPageContainer>

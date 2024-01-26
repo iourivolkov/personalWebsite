@@ -49,7 +49,7 @@ const ProjectCard = () => {
           Infographic website for the GooseEyes app that simplifies the process
           of selling used cars online.{" "}
         </CardText>
-        <CardButton>more info</CardButton>
+        <CardButton>website</CardButton>
       </CardTextContainer>
     </CardContainer>
   );

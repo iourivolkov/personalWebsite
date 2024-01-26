@@ -35,26 +35,9 @@ export const CardText = styled.p`
   margin-top: 5px;
 `;
 
-export const CardButton = styled.button`
-  font-family: inter-medium;
+export const CardButton = styled.a`
+  font-family: inter-regular;
   font-size: 16px;
-  width: 140px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  background-color: #e05151;
-  text-transform: uppercase;
-  border-radius: 10px;
-  cursor: pointer;
-  border: none;
-  margin-top: 20px;
-
-  &:hover {
-    border: 1px solid #e05151;
-    color: #e05151;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-  }
+  padding-top: 10px;
+  text-decoration: underline;
 `;

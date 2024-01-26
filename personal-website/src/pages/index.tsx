@@ -18,13 +18,13 @@ const Home: NextPage = () => {
   return (
     <>
       <LandingPage />
-      {/* <StyledBreak /> */}
+      <StyledBreak />
       <ProjectPage />
-      {/* <StyledBreak /> */}
+      <StyledBreak />
       <AboutPage />
-      {/* <StyledBreak /> */}
+      <StyledBreak />
       <ContactPage />
-      {/* <StyledBreak /> */}
+      <StyledBreak />
       <Footer />
     </>
   );

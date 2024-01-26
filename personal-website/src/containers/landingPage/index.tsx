@@ -8,7 +8,6 @@ const LandingPage: FunctionComponent = () => {
     <>
       <NavBar />
       <HeroText />
-      {/* <HeroFooter /> */}
     </>
   );
 };
