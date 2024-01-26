@@ -27,6 +27,10 @@ export const MenuNavigation = styled.p`
     transform: skew(-0.04turn);
     transition: all 0.2s ease-in-out;
   }
+
+  @media screen and (max-width: 768px) {
+    font-size: 64px;
+  }
 `;
 
 export const MenuSocialsContainer = styled.div`
@@ -38,6 +42,12 @@ export const MenuSocialsContainer = styled.div`
   position: absolute;
   left: 0;
   bottom: 0;
+
+  @media screen and (max-width: 768px) {
+    align-self: center;
+    bottom: 40px;
+    left: auto;
+  }
 `;
 
 export const MenuSocialLink = styled.p`

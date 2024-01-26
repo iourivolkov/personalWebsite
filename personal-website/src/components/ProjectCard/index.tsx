@@ -4,6 +4,7 @@ import {
   CardHeading,
   CardText,
   CardTextContainer,
+  CardButton,
 } from "./styled";
 import ProjectCardModal from "../ProjectCardModal";
 import { useState } from "react";
@@ -34,7 +35,8 @@ const ProjectCard = () => {
     <CardContainer>
       <CardImageContainer>
         <Image
-          style={{ borderRadius: "20px 20px 0 0" }}
+          // style={{ borderRadius: "20px 20px 0 0" }}
+          style={{ borderRadius: "20px" }}
           height={650}
           width={550}
           src="/assets/testImage.jpeg"
@@ -47,6 +49,7 @@ const ProjectCard = () => {
           Infographic website for the GooseEyes app that simplifies the process
           of selling used cars online.{" "}
         </CardText>
+        <CardButton>more info</CardButton>
       </CardTextContainer>
     </CardContainer>
   );

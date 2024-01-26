@@ -6,14 +6,23 @@ export const HeroParagraph = styled.p`
   font-size: 220px;
   text-transform: uppercase;
   max-width: 20ch;
-  /* margin: 100px auto 150px auto; */
   margin: 200px auto;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 48px;
+    max-width: 15ch;
+  }
 `;
 
 export const HeroText1 = styled.span`
   font-family: inter-black;
   font-size: 120px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 48px;
+    max-width: 10ch;
+  }
 `;
 
 /* @TODO - flesh out logic for this span*/
