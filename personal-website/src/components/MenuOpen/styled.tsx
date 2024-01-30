@@ -21,6 +21,7 @@ export const MenuNavigation = styled.p`
   cursor: pointer;
   line-height: 85%;
   text-decoration: none;
+  letter-spacing: -2px;
 
   &:hover {
     color: #fff;
@@ -51,9 +52,9 @@ export const MenuSocialsContainer = styled.div`
 `;
 
 export const MenuSocialLink = styled.p`
-  font-family: inter-regular;
+  font-family: inter-medium;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 12px;
   color: #efefef52;
   cursor: pointer;
 

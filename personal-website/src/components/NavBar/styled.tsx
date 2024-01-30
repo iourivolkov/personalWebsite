@@ -7,14 +7,16 @@ export const Navigation = styled.ul<{ isScrolling?: boolean }>`
   position: fixed;
   top: 0px;
   width: 100%;
-  backdrop-filter: blur(4px);
+  z-index: 10;
 `;
 
 export const NavigationItem = styled.li<{ menuOpen?: boolean }>`
-  font-family: inter-black;
+  font-family: inter-medium;
+  letter-spacing: -1px;
+  text-transform: uppercase;
   margin: 40px 100px 40px 60px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   z-index: 10000000;
   color: ${(props) => (props.menuOpen ? "#fff" : "#000000")};
 

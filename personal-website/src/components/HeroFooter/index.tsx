@@ -3,7 +3,9 @@ import { HeroFooterContainer, HeroFooterText1 } from "./styled";
 const HeroFooter = () => {
   return (
     <HeroFooterContainer>
-      <HeroFooterText1>Scroll down to learn more</HeroFooterText1>
+      <HeroFooterText1>
+        Immersive web experiences & web 3.0 marketing services
+      </HeroFooterText1>
     </HeroFooterContainer>
   );
 };

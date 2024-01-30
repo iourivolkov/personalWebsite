@@ -41,7 +41,7 @@ const NavBar = () => {
     <>
       <Navigation isScrolling={isScrolling}>
         <NavigationItem onClick={scrollToTop} menuOpen={isMenuOpen}>
-          IOURIVOLKOV
+          iourivolkov
         </NavigationItem>
         {isMenuOpen && (
           <MenuOpen isMenuOpen={isMenuOpen} closeMenu={closeOpenMenu} />

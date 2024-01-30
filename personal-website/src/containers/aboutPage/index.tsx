@@ -25,7 +25,7 @@ const AboutPage: FunctionComponent = () => {
           style={{
             objectPosition: "top",
             objectFit: "cover",
-            borderRadius: "20px",
+            // borderRadius: "20px",
           }}
         />
       </AboutImageContainer>

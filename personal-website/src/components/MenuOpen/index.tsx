@@ -5,20 +5,18 @@ import {
   MenuSocialLink,
 } from "./styled";
 import Link from "next/link";
+import { usePersonalWebsiteStore } from "@/store/personalWebsiteStore";
 
-const MenuOpen = ({ closeMenu, isMenuOpen }: any) => {
+const MenuOpen = ({ closeMenu }: any) => {
+  const { isMenuOpen } = usePersonalWebsiteStore();
+
   function scrollToTop() {
     window.scroll({ top: 0, behavior: "smooth" });
     closeMenu();
   }
 
   return (
-    <MenuContainer
-      style={{
-        transform: `translateX(${isMenuOpen ? "0%" : "-100%"})`,
-        transition: "transform 0.5s ease",
-      }}
-    >
+    <MenuContainer>
       <MenuNavigation onClick={scrollToTop}>home</MenuNavigation>
 
       <Link
@@ -42,7 +40,7 @@ const MenuOpen = ({ closeMenu, isMenuOpen }: any) => {
       >
         <MenuNavigation>contact</MenuNavigation>
       </Link>
-      <MenuSocialsContainer>
+      {/* <MenuSocialsContainer>
         <Link
           style={{ textDecoration: "none" }}
           href="https://www.linkedin.com/in/iourivolkov/"
@@ -61,7 +59,7 @@ const MenuOpen = ({ closeMenu, isMenuOpen }: any) => {
         >
           <MenuSocialLink>Instagram</MenuSocialLink>
         </Link>
-      </MenuSocialsContainer>
+      </MenuSocialsContainer> */}
     </MenuContainer>
   );
 };

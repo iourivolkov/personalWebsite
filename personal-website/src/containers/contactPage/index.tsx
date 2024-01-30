@@ -16,32 +16,29 @@ const ContactPage: FunctionComponent = () => {
 
   return (
     <ContactPageContainer>
-      <ContactHeading id="contact">Contact</ContactHeading>
+      <ContactHeading id="contact">Let's connect</ContactHeading>
       <ContactLinksContainer>
         <ContactLinkSubContainer>
-          <ContactLinks>LinkedIn</ContactLinks>
           <Link
             style={{ textDecoration: "none" }}
             href="https://www.linkedin.com/in/iourivolkov/"
           >
-            <ContactLinksText>connect</ContactLinksText>
+            <ContactLinks>LinkedIn</ContactLinks>
           </Link>
         </ContactLinkSubContainer>
-        <ContactLinkBreak isMenuOpen={isMenuOpen} />
+
         <ContactLinkSubContainer>
-          <ContactLinks>Instagram</ContactLinks>
           <Link
             style={{ textDecoration: "none" }}
             href="https://www.instagram.com/ayureeeeee/"
           >
-            <ContactLinksText>connect</ContactLinksText>
+            <ContactLinks>Instagram</ContactLinks>
           </Link>
         </ContactLinkSubContainer>
-        <ContactLinkBreak isMenuOpen={isMenuOpen} />
+        {/* <ContactLinkBreak isMenuOpen={isMenuOpen} /> */}
         <ContactLinkSubContainer>
-          <ContactLinks>Email</ContactLinks>
           <Link style={{ textDecoration: "none" }} href="">
-            <ContactLinksText>connect</ContactLinksText>
+            <ContactLinks>Email</ContactLinks>
           </Link>
         </ContactLinkSubContainer>
       </ContactLinksContainer>

@@ -36,21 +36,21 @@ const ProjectCard = () => {
       <CardImageContainer>
         <Image
           // style={{ borderRadius: "20px 20px 0 0" }}
-          style={{ borderRadius: "20px" }}
+          // style={{ borderRadius: "20px" }}
           height={650}
           width={550}
           src="/assets/testImage.jpeg"
           alt="test img"
         />
       </CardImageContainer>
-      <CardTextContainer>
+      {/* <CardTextContainer>
         <CardHeading>GooseEyes</CardHeading>
         <CardText>
           Infographic website for the GooseEyes app that simplifies the process
           of selling used cars online.{" "}
         </CardText>
         <CardButton>website</CardButton>
-      </CardTextContainer>
+      </CardTextContainer> */}
     </CardContainer>
   );
 };

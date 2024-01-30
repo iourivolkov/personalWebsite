@@ -1,20 +1,24 @@
 import { styled } from "styled-components";
 
+export const AboutPageContainer = styled.div`
+  display: flex;
+  height: 100vh;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  margin: 0px 40px 0px 40px;
+  gap: 5rem;
+`;
+
 export const AboutTextContainer = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-export const AboutPageContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin: 100px 40px 100px 40px;
-  gap: 10rem;
-`;
-
 export const AboutHeading = styled.h1`
-  font-family: inter-black;
-  font-size: 96px;
+  font-family: inter-medium;
+  text-transform: capitalize;
+  letter-spacing: -1px;
+  font-size: 36px;
   margin-bottom: 50px;
   max-width: 8ch;
 
@@ -26,7 +30,7 @@ export const AboutHeading = styled.h1`
 
 export const AboutText = styled.p`
   font-family: inter-regular;
-  font-size: 38px;
+  font-size: 60px;
   max-width: 30ch;
 
   @media screen and (max-width: 768px) {

@@ -22,13 +22,9 @@ const Home: NextPage = () => {
   return (
     <>
       <LandingPage />
-      <StyledBreak isMenuOpen={isMenuOpen} />
       <ProjectPage />
-      <StyledBreak isMenuOpen={isMenuOpen} />
       <AboutPage />
-      <StyledBreak isMenuOpen={isMenuOpen} />
       <ContactPage />
-      <StyledBreak isMenuOpen={isMenuOpen} />
       <Footer />
     </>
   );

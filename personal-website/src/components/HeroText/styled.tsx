@@ -4,10 +4,11 @@ import "../../styles/fonts.css";
 export const HeroParagraph = styled.p`
   font-family: inter-regular;
   font-size: 220px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   max-width: 20ch;
-  margin: 200px auto;
+  margin: 300px auto;
   text-align: center;
+  z-index: 10;
 
   @media screen and (max-width: 768px) {
     font-size: 48px;
@@ -16,8 +17,11 @@ export const HeroParagraph = styled.p`
 `;
 
 export const HeroText1 = styled.span`
-  font-family: inter-black;
-  font-size: 120px;
+  font-family: inter-medium;
+  letter-spacing: -4px;
+  /* text-transform: capitalize; */
+  font-size: 150px;
+  position: relative;
 
   @media screen and (max-width: 768px) {
     font-size: 48px;

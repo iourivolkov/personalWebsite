@@ -5,7 +5,7 @@ import { ProjectCardContainer, ProjectPageHeading } from "./styled";
 const ProjectPage: FunctionComponent = () => {
   return (
     <>
-      <ProjectPageHeading id="projects">Projects</ProjectPageHeading>
+      <ProjectPageHeading id="projects"> past work</ProjectPageHeading>
       <ProjectCardContainer>
         <ProjectCard />
         <ProjectCard />

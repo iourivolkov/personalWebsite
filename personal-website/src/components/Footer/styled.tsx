@@ -1,10 +1,82 @@
 import { styled } from "styled-components";
 
-export const FooterContainer = styled.div`
+export const FooterContactContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 40px 40px 40px;
+  margin-right: 40px;
+`;
+
+export const FooterNavContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: auto;
+  width: 300px;
+`;
+
+export const FooterInfoHeading = styled.h2`
+  font-family: inter-medium;
+
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+`;
+
+export const FooterHeading = styled.h1`
+  font-family: inter-medium;
+  color: #000;
+  text-transform: capitalize;
+
+  margin: 40px;
+`;
+
+export const FooterSocialsHeading = styled.h2`
+  font-family: inter-medium;
+
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 10px;
+`;
+
+export const FooterInfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const FooterInfoLink = styled.div`
+  font-family: inter-medium;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: -1px;
+`;
+
+export const FooterSocialsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const FooterSocialLink = styled.p`
+  font-family: inter-medium;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: -1px;
+`;
+
+export const FooterContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  margin: 100px 40px 40px 40px;
+`;
+
+export const BottomFooterContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
 `;
 
 export const FooterTextContainer = styled.div`
@@ -14,8 +86,9 @@ export const FooterTextContainer = styled.div`
 
 export const FooterLogo = styled.h2`
   text-transform: uppercase;
-  font-family: inter-black;
-  font-size: 16px;
+  font-family: inter-medium;
+  letter-spacing: -1px;
+  font-size: 14px;
 `;
 
 export const FooterText = styled.p`
