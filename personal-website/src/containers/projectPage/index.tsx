@@ -9,7 +9,6 @@ const ProjectPage: FunctionComponent = () => {
       <ProjectCardContainer>
         <ProjectCard />
         <ProjectCard />
-        <ProjectCard />
       </ProjectCardContainer>
     </>
   );

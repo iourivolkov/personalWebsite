@@ -22,9 +22,9 @@ const Home: NextPage = () => {
   return (
     <>
       <LandingPage />
-      <ProjectPage />
       <AboutPage />
-      <ContactPage />
+      <ProjectPage />
+      {/* <ContactPage /> */}
       <Footer />
     </>
   );

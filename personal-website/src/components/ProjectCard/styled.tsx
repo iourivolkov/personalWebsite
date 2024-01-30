@@ -11,11 +11,6 @@ export const CardContainer = styled.div`
   cursor: pointer;
 `;
 
-export const CardImageContainer = styled.div`
-  width: 550px;
-  height: 650px;
-`;
-
 export const CardTextContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -31,7 +26,7 @@ export const CardHeading = styled.h2`
 export const CardText = styled.p`
   font-family: inter-thin;
   font-size: 16px;
-  max-width: 50ch;
+  max-width: 40ch;
   margin-top: 5px;
 `;
 

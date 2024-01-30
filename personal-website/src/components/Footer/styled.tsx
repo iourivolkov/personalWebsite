@@ -1,10 +1,19 @@
 import { styled } from "styled-components";
 
 export const FooterContactContainer = styled.div`
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 40px;
+  margin-right: 40px; */
+  /* display: grid; */
+`;
+
+export const FooterContainer = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 40px 40px 40px;
 `;
 
 export const FooterNavContainer = styled.div`
@@ -34,7 +43,7 @@ export const FooterHeading = styled.h1`
 
 export const FooterSocialsHeading = styled.h2`
   font-family: inter-medium;
-
+  letter-spacing: -1px;
   text-transform: uppercase;
   margin-bottom: 10px;
   font-size: 10px;
@@ -47,7 +56,7 @@ export const FooterInfoContainer = styled.div`
 
 export const FooterInfoLink = styled.div`
   font-family: inter-medium;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 14px;
   letter-spacing: -1px;
 `;
@@ -59,17 +68,9 @@ export const FooterSocialsContainer = styled.div`
 
 export const FooterSocialLink = styled.p`
   font-family: inter-medium;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 14px;
   letter-spacing: -1px;
-`;
-
-export const FooterContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-  /* align-items: center; */
-  margin: 100px 40px 40px 40px;
 `;
 
 export const BottomFooterContainer = styled.div`

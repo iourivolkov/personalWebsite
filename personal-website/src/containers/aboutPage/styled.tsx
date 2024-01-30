@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const AboutPageContainer = styled.div`
   display: flex;
   height: 100vh;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: space-between;
   margin: 0px 40px 0px 40px;
   gap: 5rem;
@@ -30,8 +30,11 @@ export const AboutHeading = styled.h1`
 
 export const AboutText = styled.p`
   font-family: inter-regular;
-  font-size: 60px;
-  max-width: 30ch;
+  letter-spacing: -1px;
+  font-size: 95px;
+  max-width: 50ch;
+  margin: auto;
+  text-align: center;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
@@ -39,8 +42,9 @@ export const AboutText = styled.p`
 `;
 
 export const AboutImageContainer = styled.div`
-  max-height: 650px;
-  max-width: 850px;
+  max-height: 300px;
+  max-width: 500px;
+  margin: auto;
 
   @media screen and (max-width: 768px) {
     display: none;

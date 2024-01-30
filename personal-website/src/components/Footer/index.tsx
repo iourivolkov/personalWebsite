@@ -24,7 +24,7 @@ const Footer = () => {
 
   return (
     <>
-      {/* <FooterContactContainer>
+      <FooterContactContainer>
         <FooterHeading>contact</FooterHeading>
         <FooterNavContainer>
           <FooterSocialsContainer>
@@ -35,12 +35,7 @@ const Footer = () => {
             >
               <FooterSocialLink>linkedin</FooterSocialLink>
             </Link>
-            <Link
-              href="https://www.linkedin.com/in/iourivolkov/"
-              style={{ textDecoration: "none", color: "#000" }}
-            >
-              <FooterSocialLink>email</FooterSocialLink>
-            </Link>
+
             <Link
               href="https://www.linkedin.com/in/iourivolkov/"
               style={{ textDecoration: "none", color: "#000" }}
@@ -56,7 +51,7 @@ const Footer = () => {
             <FooterInfoLink>contact</FooterInfoLink>
           </FooterInfoContainer>
         </FooterNavContainer>
-      </FooterContactContainer> */}
+      </FooterContactContainer>
       <FooterContainer>
         <FooterLogo>iourivolkov</FooterLogo>
         {/* <FooterButton onClick={scrollToTop}>Top</FooterButton>
