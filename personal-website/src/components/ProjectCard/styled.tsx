@@ -11,6 +11,14 @@ export const CardContainer = styled.div`
   cursor: pointer;
 `;
 
+export const CardSubHeading = styled.h4`
+  font-family: inter-regular;
+  /* letter-spacing: -1px; */
+  font-size: 12px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+`;
+
 export const CardTextContainer = styled.div`
   display: flex;
   flex-direction: column;

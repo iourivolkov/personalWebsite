@@ -4,6 +4,7 @@ import {
   CardText,
   CardTextContainer,
   CardButton,
+  CardSubHeading,
 } from "./styled";
 import ProjectCardModal from "../ProjectCardModal";
 import { useState } from "react";
@@ -27,28 +28,30 @@ const projectsCopy = [
     projectDesc:
       "Virtual runway showcasing Kruger's 2023 Dedicate for the Cure collection.",
   },
+  {
+    id: 3,
+    img: "/assets/testImage.jpeg",
+    imgAlt: "test image",
+    projectTitle: "Lurry Labs",
+    projectDesc:
+      "Decentralized creative studio bridging web2 and web3 communities.",
+  },
 ];
 
 const ProjectCard = () => {
   return (
     <CardContainer>
       <Image
-        // style={{ borderRadius: "20px 20px 0 0" }}
-        // style={{ borderRadius: "20px" }}
-        height={500}
+        height={300}
         width={400}
         src="/assets/testImage.jpeg"
         alt="test img"
+        style={{}}
       />
-
-      {/* <CardTextContainer>
+      <CardTextContainer>
+        <CardSubHeading>Zemind Studios</CardSubHeading>
         <CardHeading>GooseEyes</CardHeading>
-        <CardText>
-          Infographic website for the GooseEyes app that simplifies the process
-          of selling used cars online.{" "}
-        </CardText>
-        <CardButton>website</CardButton>
-      </CardTextContainer> */}
+      </CardTextContainer>
     </CardContainer>
   );
 };

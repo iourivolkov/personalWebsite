@@ -1,10 +1,10 @@
 import { styled } from "styled-components";
 
 export const ProjectCardContainer = styled.div`
-  height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ProjectPageHeading = styled.h1`
@@ -18,4 +18,8 @@ export const ProjectPageHeading = styled.h1`
   @media screen and (max-width: 768px) {
     font-size: 48px;
   }
+`;
+
+export const ProjectPageContainer = styled.div`
+  height: 100vh;
 `;
