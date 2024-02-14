@@ -40,8 +40,8 @@ const MenuOpen = ({ closeMenu }: any) => {
       >
         <MenuNavigation>contact</MenuNavigation>
       </Link>
-      {/* <MenuSocialsContainer>
-        <Link
+      <MenuSocialsContainer>
+        {/* <Link
           style={{ textDecoration: "none" }}
           href="https://www.linkedin.com/in/iourivolkov/"
         >
@@ -58,8 +58,8 @@ const MenuOpen = ({ closeMenu }: any) => {
           href="https://www.instagram.com/ayureeeeee/"
         >
           <MenuSocialLink>Instagram</MenuSocialLink>
-        </Link>
-      </MenuSocialsContainer> */}
+        </Link> */}
+      </MenuSocialsContainer>
     </MenuContainer>
   );
 };

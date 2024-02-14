@@ -10,7 +10,11 @@ export const Navigation = styled.ul<{ isScrolling?: boolean }>`
   z-index: 10;
 `;
 
-export const NavigationItem = styled.li<{ menuOpen?: boolean }>`
+export const NavigationItem = styled.li<{
+  menuOpen?: boolean;
+  mobile?: boolean;
+  tablet?: boolean;
+}>`
   font-family: inter-medium;
   letter-spacing: -1px;
   text-transform: uppercase;
@@ -18,6 +22,7 @@ export const NavigationItem = styled.li<{ menuOpen?: boolean }>`
   cursor: pointer;
   font-size: 14px;
   z-index: 10000000;
+  /* display: ${(props) => (!props.mobile || !props.tablet ? "" : "none")}; */
   color: ${(props) => (props.menuOpen ? "#fff" : "#000000")};
 
   @media screen and (max-width: 768px) {

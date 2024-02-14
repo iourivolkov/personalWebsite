@@ -6,7 +6,10 @@ import { usePersonalWebsiteStore } from "@/store/personalWebsiteStore";
 const NavBar = () => {
   const { isMenuOpen, setIsMenuOpen } = usePersonalWebsiteStore();
   const [isScrolling, setIsScrolling] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
 
+  // remove if don't want to change nav background on scroll
   useEffect(() => {
     const scrollStatus = () => {
       setIsScrolling(window.scrollY >= 10);
@@ -25,6 +28,20 @@ const NavBar = () => {
   //   };
   // }, [isMenuOpen]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+      setIsTablet(window.innerWidth <= 1072);
+    };
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const handleMenuOpen = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -37,6 +54,9 @@ const NavBar = () => {
     window.scroll({ top: 0, behavior: "smooth" });
   }
 
+  // when screen size === isMobile || isTablet -> menu btn visible && menuOpen bar slides down when clicked
+  // when screen size > isTablet -> menu btn invisible -> nav items shown instead
+
   return (
     <>
       <Navigation isScrolling={isScrolling}>
@@ -44,9 +64,15 @@ const NavBar = () => {
           iourivolkov
         </NavigationItem>
         {isMenuOpen && (
+          // && (isMobile || isTablet)
           <MenuOpen isMenuOpen={isMenuOpen} closeMenu={closeOpenMenu} />
         )}
-        <NavigationItem menuOpen={isMenuOpen} onClick={handleMenuOpen}>
+        <NavigationItem
+          menuOpen={isMenuOpen}
+          onClick={handleMenuOpen}
+          mobile={isMobile}
+          tablet={isTablet}
+        >
           {isMenuOpen ? "Close" : "Menu"}
         </NavigationItem>
       </Navigation>

@@ -3,32 +3,54 @@ import { styled } from "styled-components";
 export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: start; */
   align-items: start;
-  /* border-radius: 20px;
-  border: 0.1px solid lightgrey; */
   margin: 40px;
   cursor: pointer;
 `;
 
-export const CardSubHeading = styled.h4`
+export const ProjectCardButton = styled.button`
+  width: 120px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
   font-family: inter-regular;
-  /* letter-spacing: -1px; */
   font-size: 12px;
-  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+
+  &:hover {
+    color: #fff;
+    border: none;
+    background-color: black;
+  }
+`;
+
+export const TechStack = styled.p`
+  font-family: inter-regular;
+  font-size: 14px;
+  margin-top: 10px;
+  text-transform: capitalize;
+`;
+
+export const CardSubHeading = styled.h4`
+  font-family: inter-medium;
+  font-size: 18px;
+  margin-bottom: 10px;
   text-transform: uppercase;
 `;
 
 export const CardTextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* padding: 20px; */
   padding-top: 30px;
 `;
 
 export const CardHeading = styled.h2`
   font-family: inter-regular;
-  font-size: 20px;
+  font-size: 14px;
+  max-width: 30ch;
 `;
 
 export const CardText = styled.p`
@@ -43,4 +65,10 @@ export const CardButton = styled.a`
   font-size: 16px;
   padding-top: 10px;
   text-decoration: underline;
+`;
+
+export const WorkedOn = styled.p`
+  font-family: inter-regular;
+  font-size: 14px;
+  margin-top: 10px;
 `;

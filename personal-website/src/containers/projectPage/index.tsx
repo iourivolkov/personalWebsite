@@ -12,8 +12,6 @@ const ProjectPage: FunctionComponent = () => {
       <ProjectPageHeading id="projects"> past work</ProjectPageHeading>
       <ProjectCardContainer>
         <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
       </ProjectCardContainer>
     </ProjectPageContainer>
   );

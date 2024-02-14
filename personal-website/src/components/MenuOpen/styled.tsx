@@ -11,6 +11,10 @@ export const MenuContainer = styled.div`
   position: absolute;
   z-index: 900;
   overflow: hidden;
+
+  /* @media screen and (min-width: 1072px) {
+    display: none;
+  } */
 `;
 
 export const MenuNavigation = styled.p`
@@ -29,9 +33,13 @@ export const MenuNavigation = styled.p`
     transition: all 0.2s ease-in-out;
   }
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     font-size: 64px;
-  }
+  } */
+
+  /* @media screen and (min-width: 1072px) {
+    display: none;
+  } */
 `;
 
 export const MenuSocialsContainer = styled.div`
@@ -40,7 +48,7 @@ export const MenuSocialsContainer = styled.div`
   gap: 2rem;
   margin: 50px 40px;
   align-items: start;
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
 
@@ -49,6 +57,10 @@ export const MenuSocialsContainer = styled.div`
     bottom: 40px;
     left: auto;
   }
+
+  /* @media screen and (min-width: 1072px) {
+    display: none;
+  } */
 `;
 
 export const MenuSocialLink = styled.p`
@@ -61,4 +73,8 @@ export const MenuSocialLink = styled.p`
   &:hover {
     color: #fff;
   }
+
+  /* @media screen and (min-width: 1072px) {
+    display: none;
+  } */
 `;
