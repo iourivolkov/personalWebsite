@@ -15,7 +15,7 @@ export const NavigationItem = styled.li<{
   mobile?: boolean;
   tablet?: boolean;
 }>`
-  font-family: inter-medium;
+  font-family: inter-regular;
   letter-spacing: -1px;
   text-transform: uppercase;
   margin: 40px 100px 40px 60px;

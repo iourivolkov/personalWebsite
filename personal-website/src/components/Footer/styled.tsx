@@ -13,7 +13,7 @@ export const FooterContainer = styled.div`
   /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
-  margin: 100px 40px 40px 40px;
+  margin: 40px 40px 40px 40px;
 `;
 
 export const FooterNavContainer = styled.div`

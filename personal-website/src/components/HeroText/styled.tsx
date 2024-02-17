@@ -18,8 +18,8 @@ export const HeroParagraph = styled.p`
 
 export const HeroText1 = styled.span`
   font-family: inter-medium;
-  letter-spacing: -4px;
-  /* text-transform: capitalize; */
+  letter-spacing: -10px;
+  text-transform: capitalize;
   font-size: 150px;
   position: relative;
 

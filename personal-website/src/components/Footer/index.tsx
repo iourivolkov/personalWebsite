@@ -24,7 +24,7 @@ const Footer = () => {
 
   return (
     <>
-      <FooterContactContainer>
+      {/* <FooterContactContainer>
         <FooterHeading>contact</FooterHeading>
         <FooterNavContainer>
           <FooterSocialsContainer>
@@ -51,8 +51,8 @@ const Footer = () => {
             <FooterInfoLink>contact</FooterInfoLink>
           </FooterInfoContainer>
         </FooterNavContainer>
-      </FooterContactContainer>
-      <FooterContainer>
+      </FooterContactContainer> */}
+      <FooterContainer id="footerContainer">
         <FooterLogo>iourivolkov</FooterLogo>
         {/* <FooterButton onClick={scrollToTop}>Top</FooterButton>
          */}

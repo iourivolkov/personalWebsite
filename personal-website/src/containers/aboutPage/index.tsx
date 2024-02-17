@@ -7,11 +7,12 @@ import {
   AboutTextContainer,
 } from "./styled";
 
+// onHover over words "creative" -> "buildoor", "capturing timeless images" -> "instagram handle"
+
 const AboutPage: FunctionComponent = () => {
   return (
-    <AboutPageContainer>
+    <AboutPageContainer id="aboutPageContainer">
       <AboutTextContainer>
-        {/* <AboutHeading id="about">About</AboutHeading> */}
         <AboutText>
           Toronto-based creative who enjoys crafting immersive web experiences,
           building the future of finance via web3 and capturing timeless images.

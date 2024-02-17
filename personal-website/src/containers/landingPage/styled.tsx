@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
-export const PageContainer = styled.div`
+export const PageContainer = styled.div<{ isBlur: boolean }>`
   height: 100vh;
+  /* border: ${(props) => props.isBlur && "2px solid red"}; */
+  /* filter: ${(props) => props.isBlur && "blur(15px)"}; */
 `;
 
 export const VideoBackground = styled.video`

@@ -9,7 +9,7 @@ import {
 const ProjectPage: FunctionComponent = () => {
   return (
     <ProjectPageContainer>
-      <ProjectPageHeading id="projects"> past work</ProjectPageHeading>
+      <ProjectPageHeading id="projects">past work</ProjectPageHeading>
       <ProjectCardContainer>
         <ProjectCard />
       </ProjectCardContainer>

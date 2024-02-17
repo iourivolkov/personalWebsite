@@ -1,14 +1,45 @@
-const ProjectCardModal = () => {
+import {
+  ModalContainer,
+  ModalHeading,
+  ModalSubheading,
+  ModalButton,
+  ModalImageContainer,
+  ModalTextContainer,
+  ModalCloseButton,
+  ModalButtonContainer,
+  ModalSectionTitle,
+} from "./styled";
+
+import { projectsCopy } from "../Copy";
+
+import Image from "next/image";
+
+const ProjectCardModal = ({ toggleModal, isModalOpen }: any) => {
   return (
-    <div>
-      <h1>GooseEyes</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-        explicabo est delectus laboriosam doloremque maxime dolorum
-        necessitatibus rem voluptate. Deserunt harum quibusdam voluptatibus
-        itaque illum dolore nisi, accusantium odit debitis.
-      </p>
-    </div>
+    <ModalContainer
+      style={{
+        transform: `translateX(${isModalOpen ? "100%" : "0%"})`,
+        transition: "transform 1s ease",
+      }}
+    >
+      <ModalCloseButton onClick={toggleModal}>close</ModalCloseButton>
+      <ModalTextContainer>
+        <ModalHeading>Cashmere</ModalHeading>
+
+        <ModalSubheading>
+          A virtual runway showcasing Kruger's 2023 "Dedicate for the Cure"
+          dress collection.
+        </ModalSubheading>
+
+        <ModalSubheading>
+          Header, side menu, hero section, and news page.
+        </ModalSubheading>
+
+        <ModalSubheading>
+          Next.js, Typescript, A-frame, Styled components, Zustand
+        </ModalSubheading>
+      </ModalTextContainer>
+    </ModalContainer>
   );
 };
 

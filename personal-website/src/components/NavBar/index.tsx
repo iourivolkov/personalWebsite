@@ -59,7 +59,7 @@ const NavBar = () => {
 
   return (
     <>
-      <Navigation isScrolling={isScrolling}>
+      <Navigation isScrolling={isScrolling} id="nav">
         <NavigationItem onClick={scrollToTop} menuOpen={isMenuOpen}>
           iourivolkov
         </NavigationItem>
